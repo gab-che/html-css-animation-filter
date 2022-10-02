@@ -164,6 +164,38 @@
 
 @keyframes white-slide-top{
     0%, 100%{
+        left: 10%;
+    }
+
+    50%{
+        left: 60%;
+    }
+}
+
+@keyframes white-slide-bottom{
+    0%, 100%{
+        right: 20%;
+    }
+
+    50%{
+        right: 60%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: white-slide-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: white-slide-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+/* @keyframes white-around-top{
+    0%, 100%{
         position: absolute;
         top: -10px;
         left: 10%;
@@ -171,43 +203,4 @@
         width: 60px;
         height: 20px;
     }
-
-    50%{
-        position: absolute;
-        top: -10px;
-        left: 60%;
-        background: #f5f5f5;
-        width: 60px;
-        height: 20px;
-    }
-}
-
-@keyframes white-slide-bottom{
-    0%, 100%{
-        position: absolute;
-        bottom: -10px;
-        right: 20%;
-        background: #f5f5f5;
-        width: 60px;
-        height: 20px;
-    }
-
-    50%{
-        position: absolute;
-        bottom: -10px;
-        right: 60%;
-        background: #f5f5f5;
-        width: 60px;
-        height: 20px;
-    }
-}
-
-.ex-12-button:hover .ex-12-top-white {
-    animation-name: white-slide-top;
-    animation-duration: 2s;
-}
-
-.ex-12-button:hover .ex-12-bottom-white{
-    animation-name: white-slide-bottom;
-    animation-duration: 2s;
-}
+} */
