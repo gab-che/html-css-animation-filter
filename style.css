@@ -47,15 +47,16 @@
     width: 60px;
     height: 60px;
     background: red;
+    transition: all 1s;
 }
 
-/* .ex-5-square:hover{
-
+.ex-5-square:hover{
+    transform: scale(1.8);
 }
 
 .ex-5-square:active{
-    
-} */
+    transform: scale(0.5);
+}
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
@@ -74,7 +75,7 @@
 }
 
 .ex-8-img{
-    transition: filter 1s, border-radius 1.5s;
+    transition: all 1.5s;
 }
 
 .ex-8-img:hover{
@@ -85,7 +86,15 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 1s;
 }
+
+.ex-9-img:hover{
+    filter: grayscale(60%) sepia(30%);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
